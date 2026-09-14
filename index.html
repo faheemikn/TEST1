@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>BeOKa</title>
-<link rel="icon" href="https://i.ibb.co.com/k2SSKghg/ICON-BH.png" />
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #eee;
-    overflow: hidden; /* Mencegah scroll ganda */
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  .iframe-container {
-    width: 100%;
-    height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
-    overflow: hidden;
-  }
+  <title>Your App Name Here</title>
 
-  iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-</style>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7f7f7;
+      color: #222;
+      text-align: center;
+    }
+
+    .box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      max-width: 420px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 18px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="iframe-container">
-    <iframe
-      id="app"
-      src="https://script.google.com/macros/s/AKfycbz5AMs8otZ9cXMZAIPRZgxi0Nk5sPkS3gH8i5lvPVSlvjyv4ia9KJ_eser2c23Wm9400Q/exec"
-      scrolling="yes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allow="fullscreen; camera; microphone; display-capture; geolocation;"
-    >
-    </iframe>
+  <div class="box">
+    <h2>Opening App...</h2>
+    <p>If it does not open automatically, click the button below.</p>
+
+    <a id="openApp" href="#" target="_top">Open App</a>
   </div>
+
+  <script>
+    const APP_URL = https://script.google.com/macros/s/AKfycbz2-WGXKBr-Dswbc00fAMv5N5CWKa8yqsJDxFjer0d-WnKisouj0GUBb_fWNVD5iC27/exec?adminToken=7c762c4defd34884a12209ffab10ac294d90b9e88774494ca11de3a260766862cb0030f8575941f49942644f65d9a1e3;
+
+    document.getElementById("openApp").href = APP_URL;
+
+    setTimeout(function () {
+      window.location.replace(APP_URL);
+    }, 500);
+  </script>
 </body>
 </html>
