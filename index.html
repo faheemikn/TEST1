@@ -45,17 +45,15 @@
     <h2>Opening App...</h2>
     <p>If it does not open automatically, click the button below.</p>
 
-    <a id="openApp" href="#" target="_top">Open App</a>
+    <a id="openApp" href="https://script.google.com/macros/s/AKfycbz5AMs8otZ9cXMZAIPRZgxi0Nk5sPkS3gH8i5lvPVSlvjyv4ia9KJ_eser2c23Wm9400Q/exec">Open App</a>
   </div>
 
   <script>
-    const APP_URL = https://script.google.com/macros/s/AKfycbz5AMs8otZ9cXMZAIPRZgxi0Nk5sPkS3gH8i5lvPVSlvjyv4ia9KJ_eser2c23Wm9400Q/exec;
+    const APP_URL = "https://script.google.com/macros/s/AKfycbz5AMs8otZ9cXMZAIPRZgxi0Nk5sPkS3gH8i5lvPVSlvjyv4ia9KJ_eser2c23Wm9400Q/exec";
 
     document.getElementById("openApp").href = APP_URL;
 
-    setTimeout(function () {
-      window.location.replace(APP_URL);
-    }, 500);
+    window.location.href = APP_URL;
   </script>
 </body>
 </html>
